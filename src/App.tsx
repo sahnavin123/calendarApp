@@ -1,14 +1,13 @@
-import {StyleSheet, Text, View} from 'react-native';
 import React from 'react';
+import {CalenderContextProvider} from './context/CalenderContext';
+import Router from './routes/Router';
 
 const App = () => {
   return (
-    <View>
-      <Text>App</Text>
-    </View>
+    <CalenderContextProvider>
+      <Router />
+    </CalenderContextProvider>
   );
 };
 
 export default App;
-
-const styles = StyleSheet.create({});
